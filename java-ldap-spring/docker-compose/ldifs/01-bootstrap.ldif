@@ -1,0 +1,52 @@
+dn: dc=example,dc=org
+objectClass: dcObject
+objectClass: organization
+dc: example
+o: Example Organization
+
+dn: ou=people,dc=example,dc=org
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,dc=example,dc=org
+objectClass: organizationalUnit
+ou: groups
+
+dn: ou=system,dc=example,dc=org
+objectClass: organizationalUnit
+ou: system
+
+dn: uid=app-reader,ou=system,dc=example,dc=org
+objectClass: inetOrgPerson
+uid: app-reader
+cn: Application Reader
+sn: Reader
+mail: app-reader@example.org
+userPassword: app-reader-password
+
+dn: uid=alice,ou=people,dc=example,dc=org
+objectClass: inetOrgPerson
+uid: alice
+cn: Alice Smith
+sn: Smith
+mail: alice@example.org
+userPassword: alice123
+
+dn: uid=bob,ou=people,dc=example,dc=org
+objectClass: inetOrgPerson
+uid: bob
+cn: Bob Johnson
+sn: Johnson
+mail: bob@example.org
+userPassword: bob123
+
+dn: cn=app-users,ou=groups,dc=example,dc=org
+objectClass: groupOfNames
+cn: app-users
+member: uid=alice,ou=people,dc=example,dc=org
+member: uid=bob,ou=people,dc=example,dc=org
+
+dn: cn=app-admins,ou=groups,dc=example,dc=org
+objectClass: groupOfNames
+cn: app-admins
+member: uid=alice,ou=people,dc=example,dc=org
