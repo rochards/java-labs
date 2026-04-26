@@ -6,3 +6,4 @@
 
 - `java-ldap-spring`: This repository is a learning lab that combines a local OpenLDAP server with a Java Maven application that uses Spring LDAP to interact with that directory. See the project README in [`java-ldap-spring/README.md`](./java-ldap-spring/README.md).
 - `java-jwt-token`: This repository is a small Java lab for learning how JSON Web Tokens (JWT) work in practice, with examples and tests for generating and validating signed tokens using `HS256` and `RS256`. See the project README in [`java-jwt-token/README.md`](./java-jwt-token/README.md).
+- `java-singleton`: This repository is a small Java lab for learning the Singleton pattern in practice, comparing multiple cache manager implementations with and without singleton semantics, including concurrency-focused tests for lazy and thread-safe variants. See the project README in [`java-singleton/README.md`](./java-singleton/README.md).
