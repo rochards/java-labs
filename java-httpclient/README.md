@@ -1,4 +1,4 @@
-# Java HttpClient Notes
+# Java HttpClient
 
 This repository is a learning lab to understand how `java.net.http.HttpClient` works in practice and how to handle common HTTP communication problems.
 
